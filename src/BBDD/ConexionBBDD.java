@@ -20,7 +20,7 @@ public class ConexionBBDD {
    */
   public ConexionBBDD() {
     try {
-      con = DriverManager.getConnection("jdbc:mysql://localhost/Pokemon?serverTimezone=UTC", "root", "");
+      con = DriverManager.getConnection("jdbc:mysql://localhost/Pokemon?serverTimezone=UTC", "Mario", "");
     } catch (SQLException ex) {
       Logger.getLogger(ConexionBBDD.class.getName()).log(Level.SEVERE, null, ex);
     }
