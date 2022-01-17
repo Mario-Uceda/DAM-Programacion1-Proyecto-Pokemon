@@ -1,0 +1,6 @@
+.Wallpaper {
+    -fx-background-image: url(../imagenes/wallpaper.png);
+}
+.fondo {
+    -fx-background-color: white;
+}

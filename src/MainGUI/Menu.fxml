@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="Wallpaper" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainGUI.MenuController">
+  <children>
+    <Text fill="WHITE" layoutX="623.0" layoutY="68.0" scaleX="5.0724081558686125" scaleY="2.879588877738658" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU">
+      <font>
+        <Font name="Comic Sans MS Bold" size="15.0" />
+      </font>
+    </Text>
+    <Button fx:id="CombatePokemon" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="420.0" layoutY="162.0" minHeight="240.0" minWidth="200.0" mnemonicParsing="false" onAction="#combatePokemon" prefHeight="0.0" prefWidth="200.0" text="Combate Pokemon" textAlignment="LEFT">
+      <graphic>
+        <ImageView fitHeight="200.0" fitWidth="200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" translateY="-20.0" y="0.0">
+          <image>
+            <Image url="@../imagenes/capturar%20pokemon.jpg.png" />
+          </image>
+          <rotationAxis>
+            <Point3D />
+          </rotationAxis>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Tienda" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="660.0" layoutY="162.0" minHeight="240.0" minWidth="200.0" mnemonicParsing="false" onAction="#tienda" prefHeight="0.0" prefWidth="200.0" text="Tienda">
+      <graphic>
+        <ImageView fitHeight="200.0" fitWidth="200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" scaleZ="1.0" translateY="-20.0">
+          <image>
+            <Image url="@../imagenes/Tienda.png" />
+          </image>
+          <rotationAxis>
+            <Point3D />
+          </rotationAxis>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="Pokemons" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="420.0" layoutY="422.0" minHeight="240.0" minWidth="200.0" mnemonicParsing="false" onAction="#pokemons" prefHeight="200.0" prefWidth="200.0" text="Pokemons">
+      <graphic>
+        <ImageView fitHeight="200.0" fitWidth="200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" translateY="-20.0">
+          <image>
+            <Image url="@../imagenes/POKEMONS.jpg" />
+          </image>
+        </ImageView>
+      </graphic>
+      <rotationAxis>
+        <Point3D />
+      </rotationAxis>
+    </Button>
+    <Button fx:id="Partida" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="660.0" layoutY="422.0" minHeight="240.0" minWidth="200.0" mnemonicParsing="false" onAction="#partida" prefHeight="200.0" prefWidth="200.0" text="Partidas">
+      <graphic>
+        <ImageView id="" fitHeight="200.0" fitWidth="200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" translateY="-20.0">
+          <image>
+            <Image url="@../imagenes/guardar.png" />
+          </image>
+        </ImageView>
+      </graphic>
+      <rotationAxis>
+        <Point3D />
+      </rotationAxis>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@Wallpaper.css" />
+  </stylesheets>
+</AnchorPane>

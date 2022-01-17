@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="Wallpaper" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainGUI.PersonajeController">
+  <children>
+    <Text fill="WHITE" layoutX="566.0" layoutY="64.0" scaleX="2.736947482894121" scaleY="3.3669559362762516" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CREAR PERSONAJE" underline="true">
+      <font>
+        <Font name="Comic Sans MS Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text fill="WHITE" font="$x1" layoutX="607.0" layoutY="139.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
+    <TextField fx:id="NOMBRE" alignment="CENTER" disable="false" layoutX="540.0" layoutY="161.0" prefHeight="31.38055419921875" prefWidth="200.0" promptText="" />
+    <Text fill="WHITE" font="$x1" layoutX="609.0" layoutY="241.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="GÉNERO" />
+    <ToggleButton fx:id="Hombre" blendMode="SRC_OVER" cache="false" contentDisplay="CENTER" disable="false" focusTraversable="true" layoutX="460.0" layoutY="281.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" mouseTransparent="false" onAction="#FondoBotonHombre" pickOnBounds="false" prefHeight="100.0" prefWidth="150.0" selected="true" text="" textFill="BLACK" visible="true">
+      <graphic>
+        <ImageView cache="false" cacheHint="DEFAULT" depthTest="INHERIT" fitHeight="100.0" fitWidth="100.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../imagenes/CabezaChico.png" />
+        </ImageView>
+      </graphic>
+      <toggleGroup>
+        <ToggleGroup fx:id="genero" />
+      </toggleGroup>
+    </ToggleButton>
+    <ToggleButton fx:id="Mujer" contentDisplay="CENTER" layoutX="670.0" layoutY="281.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" onAction="#FondoBotonMujer" pickOnBounds="false" prefHeight="100.0" prefWidth="150.0" text="" textFill="BLACK" toggleGroup="$genero">
+      <graphic>
+        <ImageView fitHeight="101.00009999999747" fitWidth="151.5001499999962" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../imagenes/CabezaChica.png" />
+        </ImageView>
+      </graphic>
+    </ToggleButton>
+    <Text fill="WHITE" font="$x1" layoutX="545.0" layoutY="428.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA DE NACIMIENTO" />
+    <Text fill="WHITE" font="$x1" layoutX="477.0" layoutY="500.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="DÍA" />
+    <TextField fx:id="DIA" layoutX="451.0" layoutY="521.0" prefHeight="31.38055419921875" prefWidth="82.0" />
+    <Text fill="WHITE" font="$x1" layoutX="623.0" layoutY="500.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="MES" />
+    <TextField fx:id="MES" layoutX="599.0" layoutY="521.0" prefHeight="31.38055419921875" prefWidth="82.0" />
+    <Text fill="WHITE" font="$x1" layoutX="773.0" layoutY="500.0" scaleX="1.4106542885162034" scaleY="1.5012236906510035" strokeType="OUTSIDE" strokeWidth="0.0" text="AÑO" />
+    <TextField fx:id="AÑO" layoutX="750.0" layoutY="521.0" prefHeight="31.0" prefWidth="82.0" />
+    <Button fx:id="CREAR" layoutX="590.0" layoutY="641.0" mnemonicParsing="false" onAction="#crearPersonaje" text="CREAR" textFill="#0083cc">
+      <font>
+        <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+    </Button>
+    <Pane fx:id="error1" layoutX="460.0" layoutY="260.0" prefHeight="200.0" prefWidth="360.0" styleClass="fondo">
+      <children>
+        <Button layoutX="139.0" layoutY="152.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="33.9608154296875" prefWidth="82.0" text="CERRAR" />
+        <Text layoutX="115.0" layoutY="35.0" scaleX="1.401999503962787" scaleY="1.438570729319628" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUCE TODOS TUS DATOS" />
+      </children>
+    </Pane>
+    <Pane fx:id="error2" layoutX="460.0" layoutY="260.0" prefHeight="200.0" prefWidth="360.0" styleClass="fondo">
+      <children>
+        <Button layoutX="139.0" layoutY="152.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="33.9608154296875" prefWidth="82.0" text="CERRAR" />
+        <Text layoutX="86.0" layoutY="34.0" scaleX="1.2685386911966432" scaleY="1.438570729319628" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUCE UNA FECHA CORRECTA" />
+      </children>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@Wallpaper.css" />
+  </stylesheets>
+</AnchorPane>

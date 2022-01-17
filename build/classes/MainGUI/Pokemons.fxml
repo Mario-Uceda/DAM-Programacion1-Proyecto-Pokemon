@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="Wallpaper" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainGUI.PokemonsController">
+  <children>
+    <TableView fx:id="Tabla" layoutX="797.0" layoutY="41.0" prefHeight="566.0" prefWidth="450.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="150.0" text="Especie" fx:id="ESPECIE" />
+        <TableColumn prefWidth="150.0" text="Mote" fx:id="MOTE" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="150.0" text="Nivel" fx:id="NIVEL" />
+      </columns>
+    </TableView>
+    <Button fx:id="MOSTRAR" layoutX="856.0" layoutY="624.0" mnemonicParsing="false" onAction="#MOSTRARPOKEMON" prefHeight="57.0" prefWidth="116.0" text="MOSTRAR" />
+    <Button fx:id="ELIMINAR" layoutX="1072.0" layoutY="624.0" mnemonicParsing="false" onAction="#ELIMINARPOKEMON" prefHeight="57.0" prefWidth="116.0" text="ELIMINAR" />
+    <Text layoutX="51.0" layoutY="136.0" scaleX="2.4961973713650893" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="MOTE" />
+    <TextField id="MOTE" fx:id="Mote" layoutX="122.0" layoutY="119.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="64.0" layoutY="186.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="ESPECIE" />
+    <TextField id="ESPECIE" fx:id="Especie" layoutX="152.0" layoutY="169.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="55.0" layoutY="236.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="NIVEL" />
+    <TextField id="NIVEL" fx:id="Nivel" layoutX="122.0" layoutY="219.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="85.0" layoutY="286.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="PS MÁXIMO" />
+    <TextField fx:id="PSMAXIMO" layoutX="222.0" layoutY="269.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="80.0" layoutY="336.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="PS ACTUAL" />
+    <TextField fx:id="PSACTUAL" layoutX="202.0" layoutY="319.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="67.0" layoutY="386.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE" />
+    <TextField fx:id="ATAQUE" layoutX="162.0" layoutY="369.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="71.0" layoutY="436.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="DEFENSA" />
+    <TextField fx:id="DEFENSA" layoutX="172.0" layoutY="419.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="115.0" layoutY="486.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE ESPECIAL" />
+    <TextField fx:id="ATAQUEESPECIAL" layoutX="313.0" layoutY="469.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="119.0" layoutY="536.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="DEFENSA ESPECIAL" />
+    <TextField fx:id="DEFENSAACTUAL" layoutX="323.0" layoutY="519.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Text layoutX="84.0" layoutY="586.0" scaleX="2.806952532203988" scaleY="1.5638766519823788" strokeType="OUTSIDE" strokeWidth="0.0" text="VELOCIDAD" />
+    <TextField fx:id="VELOCIDAD" layoutX="213.0" layoutY="569.0" prefHeight="24.9609375" prefWidth="200.0" />
+    <Pane layoutX="499.0" layoutY="54.0" prefHeight="279.0" prefWidth="241.0">
+      <children>
+        <ImageView fx:id="GIF" fitHeight="279.0" fitWidth="241.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+    </Pane>
+    <Button fx:id="VOLVER" layoutX="29.0" layoutY="657.0" mnemonicParsing="false" onAction="#VOLVER" prefHeight="45.0" prefWidth="100.81216430664062" text="VOLVER" />
+  </children>
+  <stylesheets>
+    <URL value="@Wallpaper.css" />
+  </stylesheets>
+</AnchorPane>
